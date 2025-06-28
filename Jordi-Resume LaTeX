@@ -1,0 +1,142 @@
+%-------------------------
+% SWE Resume in Latex
+% Author: Jordi Lopez
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=black,
+    linkcolor=black
+}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+\pdfgentounicode=1
+
+% Commands
+\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-2pt}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4}
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]} 
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+%-------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge Jordi Lopez} \\ \vspace{1pt}
+    123-456-7890 $|$ \href{mailto:example@gmail.com}{example@gmail.com} $|$ 
+    \href{https://linkedin.com/in/jordi-lopez-cs}{linkedin.com/in/jordi-lopez-cs} $|$
+    \href{https://github.com/jangel19}{github.com/jangel19}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Massachusetts Lowell}{Lowell, MA}
+      {B.S. Computer Science, Minor in Mathematics}{GPA: 3.31}
+      \resumeItemListStart
+        \resumeItem{Coursework: Object-Oriented Programming, Data Structures \& Algorithms, Logic Design, Computer Security, Calculus.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+  {\textbf{NightSky} $|$ \emph{Python, JavaScript, Flask, AstroPy, Git, HTML/CSS, JSON}}{May 2025 -- Present}
+  \resumeItemListStart
+    \resumeItem{Engineered a full-stack web app to render star maps based on user-provided date and location with astronomical libraries.}
+    \resumeItem{Implemented a Python Flask backend with caching to reduce API calls by 40\% and designed the architecture for future cloud deployment.}
+    \resumeItem{Optimized performance with lazy-loading and minimal asset bundles, improving load time across devices.}
+  \resumeItemListEnd
+
+   \resumeProjectHeading
+  {\textbf{VITA Health} $|$ \emph{Swift, ESP32, BLE, Supabase, Xcode, Git, Figma, Arduino IDE}}{Feb. 2025 -- Present}
+  \resumeItemListStart
+    \resumeItem{Developed an iOS app in Swift with BLE communication to an ESP32 wearable, streaming real-time biometrics like SpO2 and heart rate.}
+    \resumeItem{Built a Supabase-integrated backend for data storage and analytics across multiple devices.}
+    \resumeItem{Led a 6-person team coordinating embedded programming, UI design, and data pipeline architecture for production readiness.}
+    \resumeItem{Integrated unit tests and planned CI pipelines to maintain code quality.}
+  \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {IT and Digital Solutions Intern}{June 2025 -- Present}
+      {Soderberg Insurance Services}{Lynnfield, MA}
+      \resumeItemListStart
+        \resumeItem{Automated policy notifications with HubSpot workflows, improving customer retention by 30\% through data-driven triggers.}
+        \resumeItem{Redesigned and rebuilt the corporate website with HTML/CSS/JavaScript, improving SEO and reducing page load time by 35\%.}
+        \resumeItem{Integrated Google Analytics with data privacy safeguards, boosting conversion rates by 15\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{
+      \item{
+        \textbf{Languages}{: Java, Python, JavaScript, C/C++, SQL (Postgres), HTML/CSS} \\
+        \textbf{Frameworks}{: React, Node.js, Flask, Supabase, WordPress} \\
+        \textbf{Developer Tools}{: Git, Docker, GCP, VS Code, Xcode, PyCharm, IntelliJ, CLion, GitHub Actions} \\
+        \textbf{Libraries}{: pandas, NumPy, Matplotlib, Selenium, AstroPy} \\
+        \textbf{Concepts}{: REST APIs, OOP, Data Structures, Algorithms, CI/CD, Cloud Deployment}
+      }
+    }
+\end{itemize}
+
+%-----------LEADERSHIP-----------
+\section{Leadership \& Activities}
+\begin{itemize}[leftmargin=0.15in, label={--}]
+  \item \textbf{ColorStack Member} (2025–Present): Support and mentor peers with resume reviews and internship guidance within a national community of diverse computer science students.
+  \item \textbf{Cloud Computing Club, UMass Lowell} (2025–Present): Engage in cloud architecture discussions, hands-on labs, and technical workshops to broaden knowledge of scalable infrastructure.
+  \item \textbf{Helping Hands Volunteer, Lynn, MA} (2019–Present): Prepare and serve meals on a monthly basis to community members in need.
+  \item \textbf{Algorithm Practice} (Ongoing): Actively solving data structures and algorithms questions on LeetCode to strengthen problem-solving skills.
+\end{itemize}
+
+\end{document}
